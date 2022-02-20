@@ -3,7 +3,6 @@ import './Product.css';
 
 function Product({id, title, image, price, rating}) {
     return (
-        <div>
             <div className="product">
                 <div className="product__info">
                     <p>{title}</p>
@@ -19,11 +18,10 @@ function Product({id, title, image, price, rating}) {
                         ))}
                     </div>
                 </div>
-                <img src={image} alt='product-image' />
+                <img src={image} />
                 
                 <button>Add to Basket</button>
             </div>
-        </div>
     )
 }
 
